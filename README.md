@@ -25,3 +25,19 @@ Por exemplo, uma solicitação multipart/form-data pode se parecer com isso:
 Neste exemplo, há dois campos no formulário: um campo de texto chamado "campoTexto" e um campo de arquivo chamado "arquivo". Cada parte é delimitada pelo marcador ------WebKitFormBoundaryABC123, e o tipo de conteúdo do arquivo é especificado no cabeçalho da parte correspondente.
 
 O uso de multipart/form-data permite que dados de formulários sejam enviados de forma eficiente, mantendo a estrutura e a integridade dos dados, especialmente quando se trata de envio de arquivos. Este formato é comumente utilizado em formulários HTML que incluem elementos de upload de arquivos.
+
+
+## como fazer upload?
+
+faça uma requisição na rota /upload com o cabeçalho do tipo "multipart/form-data" e anexe o arquivo, ele será processado e enviado para a pasta de uploads da api.
+
+## Mas tem como fazer download?
+
+sim! você pode fazer download pelo navegador na rota:
+
+/files/nome-do-arquivo.extensão
+
+o nome do arquivo pós processado contém um id unico, e ele faz parte do nome, insira o nome do arquivo após o processamento de upload!
+
+
+### 
